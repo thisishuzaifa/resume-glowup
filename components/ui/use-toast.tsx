@@ -21,7 +21,12 @@ interface ToastOptions {
 export function useToast() {
   const [toasts, setToasts] = useState<Toast[]>([]);
 
-  const toast = ({ title, description, variant = "default", duration = 5000 }: ToastOptions) => {
+  const toast = ({
+    title,
+    description,
+    variant = "default",
+    duration = 5000,
+  }: ToastOptions) => {
     const id = Math.random().toString(36).substring(2, 9);
     const newToast: Toast = {
       id,

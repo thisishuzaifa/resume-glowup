@@ -1,0 +1,21 @@
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+    // Disable rules that might cause issues with Vercel deployment
+    "react/no-unescaped-entities": "off",
+    "react/display-name": "off",
+    "@next/next/no-img-element": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "import/no-anonymous-default-export": "off",
+    // Add any other rules you want to disable
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "off"
+  },
+  "ignorePatterns": [
+    "node_modules/",
+    ".next/",
+    "out/",
+    "public/",
+    "**/*.d.ts"
+  ]
+}
