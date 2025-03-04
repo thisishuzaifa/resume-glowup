@@ -13,27 +13,27 @@ export default async function DashboardPage() {
     <div className="container mx-auto px-4 py-8 max-w-6xl">
       <h1 className="text-3xl font-light tracking-tight mb-8">Welcome, {user.firstName || "User"}!</h1>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-        <div className="card bg-base-100 shadow-sm border border-base-200">
-          <div className="card-body">
-            <h2 className="text-xl font-semibold mb-4">Upload Your Resume</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-4 mb-12">
+        <div className="card bg-base-100 font-light shadow-sm border border-base-200">
+          <div className="card-body p-4">
+            <h2 className="text-xl font-light mb-4">Upload Your Resume</h2>
             <p className="text-base-content/70 mb-6">
               Upload your resume to get AI-powered feedback and improvements.
             </p>
-            <div className="p-8 border-2 border-dashed border-base-300 rounded-lg bg-base-200/50 text-center">
+            <div className="p-8 border-2 border-base-300 rounded-lg bg-base-200/50 text-center">
               <p className="text-base-content/70 mb-2">Drag and drop your resume here</p>
               <p className="text-base-content/50 text-sm">or</p>
               <button className="mt-2 btn btn-primary">
                 Browse Files
               </button>
-              <p className="text-xs text-base-content/50 mt-2">Supported formats: PDF, DOCX, TXT</p>
+              <p className="text-xs text-base-content/50 mt-2">Supported formats: PDF, DOCX</p>
             </div>
           </div>
         </div>
         
-        <div className="card bg-base-100 shadow-sm border border-base-200">
+        <div className="card bg-base-100 shadow-sm border p-4 border-base-200">
           <div className="card-body">
-            <h2 className="text-xl font-semibold mb-4">Add a Job Description</h2>
+            <h2 className="text-xl font-light mb-4">Add a Job Description</h2>
             <p className="text-base-content/70 mb-6">
               Add a job description to tailor your resume and generate a cover letter.
             </p>
@@ -45,7 +45,7 @@ export default async function DashboardPage() {
                 <input
                   type="text"
                   id="jobTitle"
-                  className="input input-bordered w-full"
+                  className="input shadow-lg p-2 rounded-lg input-bordered border-2 border-b-neutral-100 w-full"
                   placeholder="e.g., Software Engineer"
                 />
               </div>
@@ -56,7 +56,7 @@ export default async function DashboardPage() {
                 <input
                   type="text"
                   id="company"
-                  className="input input-bordered w-full"
+                  className="input shadow-lg p-2 rounded-lg input-bordered border-2 border-b-neutral-100 w-full"
                   placeholder="e.g., Acme Inc."
                 />
               </div>
@@ -67,7 +67,7 @@ export default async function DashboardPage() {
                 <textarea
                   id="jobDescription"
                   rows={5}
-                  className="textarea textarea-bordered w-full"
+                  className="textarea shadow-lg p-2 rounded-lg textarea-bordered border-2 border-b-neutral-100 w-full"
                   placeholder="Paste the job description here..."
                 ></textarea>
               </div>
@@ -79,9 +79,9 @@ export default async function DashboardPage() {
         </div>
       </div>
       
-      <div className="card bg-base-100 shadow-sm border border-base-200 mb-8">
+      <div className="card bg-base-100 p-4 shadow-sm border border-base-200 mb-8">
         <div className="card-body">
-          <h2 className="text-xl font-semibold mb-6">Your Resumes</h2>
+          <h2 className="text-xl font-light mb-6">Your Resumes</h2>
           <div className="overflow-x-auto">
             <table className="table w-full">
               <thead>
@@ -104,9 +104,9 @@ export default async function DashboardPage() {
         </div>
       </div>
       
-      <div className="card bg-base-100 shadow-sm border border-base-200">
+      <div className="card p-4 bg-base-100 shadow-sm border border-base-200">
         <div className="card-body">
-          <h2 className="text-xl font-semibold mb-6">Your Job Applications</h2>
+          <h2 className="text-xl font-light mb-6">Your Job Applications</h2>
           <div className="overflow-x-auto">
             <table className="table w-full">
               <thead>

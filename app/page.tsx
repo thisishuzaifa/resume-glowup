@@ -6,10 +6,10 @@ export default async function Home() {
 
   return (
     <div className="min-h-screen flex flex-col bg-base-100">
-      {/* Navbar */}
-      <nav className="border-b border-base-200 py-4">
-        <div className="container mx-auto px-4 max-w-6xl flex justify-between items-center">
-          <div className="flex items-center gap-2">
+      {/* Navbar - updated to match dashboard style */}
+      <header className="sticky top-0 z-10 backdrop-blur-sm bg-base-100/90 py-4">
+        <div className="container mx-auto px-6 max-w-6xl flex justify-between items-center">
+          <Link href="/" className="flex items-center gap-2">
             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -29,17 +29,17 @@ export default async function Home() {
               </svg>
             </div>
             <span className="font-thin text-xl">Resume Glowup</span>
-          </div>
+          </Link>
           <div className="flex items-center gap-6">
             <Link
               href="#features"
-              className="text-base-content/70 hover:text-base-content transition-colors"
+              className="px-3 py-2 rounded-md text-sm font-medium text-base-content/70 hover:bg-base-200/50 hover:text-base-content transition-all duration-200"
             >
               Features
             </Link>
             <Link
               href="#how-it-works"
-              className="text-base-content/70 hover:text-base-content transition-colors"
+              className="px-3 py-2 rounded-md text-sm font-medium text-base-content/70 hover:bg-base-200/50 hover:text-base-content transition-all duration-200"
             >
               How it works
             </Link>
@@ -54,7 +54,7 @@ export default async function Home() {
             )}
           </div>
         </div>
-      </nav>
+      </header>
 
       {/* Hero Section */}
       <section className="py-20 md:py-32">
