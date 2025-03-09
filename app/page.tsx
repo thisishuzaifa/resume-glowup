@@ -297,7 +297,7 @@ export default async function Home() {
                   <polyline points="10 9 9 9 8 9"></polyline>
                 </svg>
               </div>
-              <span className="font-medium">Resume GlowUp</span>
+              <span className="font-medium">Resume Glowup</span>
             </div>
             <div className="flex space-x-6">
               <a
